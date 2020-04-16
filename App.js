@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Constants from 'expo-constants'
+import Home from './screens/Home'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Home />
     </View>
   );
 }
@@ -12,7 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    marginTop:Constants.statusBarHeight,
+    backgroundColor: '#eee',
     alignItems: 'center',
     justifyContent: 'center',
   },
